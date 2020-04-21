@@ -14,12 +14,12 @@ public class IntArrayTest {
     @Test
     public void isContaintsDuplicatesTrue() {
         int[] array = {4, 5, 6, 6, 8};
-        assertTrue(intArray.isContaintsDuplicates(array));
+        assertTrue(intArray.isContainsDuplicates(array));
     }
 
     @Test
     public void isContaintsDuplicatesFalse() {
         int[] array = {4, 5, 6, 7, 8};
-        assertFalse(intArray.isContaintsDuplicates(array));
+        assertFalse(intArray.isContainsDuplicates(array));
     }
 }

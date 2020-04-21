@@ -2,15 +2,12 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class IntArray {
-    public boolean isContaintsDuplicates(int[] array) {
+    public boolean isContainsDuplicates(int[] array) {
         Set<Integer> set = new HashSet<>();
-        int setLength = set.size();
         for (int i : array) {
-            set.add(i);
-            if (setLength == set.size()) {
+            if (!set.add(i)) {
                 return true;
             }
-            setLength = set.size();
         }
         return false;
     }
